@@ -5,17 +5,17 @@ import seaborn as sns
 import joblib
 
 # Streamlit UI
-@st.cache
+
 def load_model():
     # Load the model using joblib
-    loaded_model = joblib.load('C:\Users\Boniface\Desktop\Projects\RAD-Detector\hack.joblib')
+    loaded_model = joblib.load('C:/Users/Boniface/Desktop/Projects/RAD-Detector/hack1.joblib')
     return loaded_model
 
 model = load_model()
 
 # Streamlit UI
 def main():
-    st.title("GAD Detection App")
+    st.title("MjGAD Detection App")
 
     # Dropdown options - modify these according to your dataset
     options = [0, 1, 2, 3, 4, 5]
@@ -41,12 +41,12 @@ def main():
             'Restlessness': [restlessness],
             'Muscle Tension': [muscle_tension],
             'Concentration difficulties': [concentration_difficulties],
-            'Easy Fatigability': [easy_fatigability],
-            'Anxious Affect in Situations': [anxious_affect],
-            'Anxiety Not Associated with Situation': [anxiety_no_situation],
-            'Exaggerated Startle Response': [exaggerated_startle],
-            'Worries that cannot be stopped voluntarily and occur across more than one activity': [worries_cannot_stop],
-            'Frequency of Worries': [frequency_of_worries],
+            'Easy fatigability': [easy_fatigability],
+            'Anxious affect that occurs in certain situations/environments': [anxious_affect],
+            'Anxiety not associated with any particular situation': [anxiety_no_situation],
+            'Exaggerated tartle response': [exaggerated_startle],
+            'Worries that cannot be stopped voluntarily and occur across more than one acctivity': [worries_cannot_stop],
+            'Frequency of worries': [frequency_of_worries],
             'Hypochondriasis': [hypochondriasis]
             # Add other features...
         })
