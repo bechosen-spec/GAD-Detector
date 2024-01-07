@@ -15,7 +15,7 @@ model = load_model()
 
 # Streamlit UI
 def main():
-    st.title("MentGAD Detection App")
+    st.title("MentAICare (GAD Detection App)")
 
     # Dropdown options - modify these according to your dataset
     options = [0, 1, 2, 3, 4, 5]
