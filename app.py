@@ -8,7 +8,7 @@ import joblib
 
 def load_model():
     # Load the model using joblib
-    loaded_model = joblib.load('C:/Users/Boniface/Desktop/Projects/RAD-Detector/hack1.joblib')
+    loaded_model = joblib.load('hack1.joblib')
     return loaded_model
 
 model = load_model()
@@ -82,7 +82,7 @@ def main():
             elif 0.5 <= gad_prob < 0.75:
                 st.write(recommendations[1])
             elif 0.75 <= gad_prob < 0.9:
-                st.write(recommendations[2])
+                st.write(recommendations[0])
             else:
                 st.write(recommendations[3])
 
