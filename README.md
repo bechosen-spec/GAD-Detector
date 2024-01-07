@@ -1,1 +1,1 @@
-# RAD-Detector
+# GAD-Detector
