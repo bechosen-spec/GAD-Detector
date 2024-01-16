@@ -59,10 +59,10 @@ def main():
     easy_fatigability = labeled_slider('Easily tired or weak')
     anxious_affect = labeled_slider('Anxious Affect in Situations')
     anxiety_no_situation = labeled_slider('Anxiety Not Associated with Situation')
-    exaggerated_startle = labeled_slider('Exaggerated startle Response')
+    exaggerated_startle = labeled_slider('Exaggerated startle Response (reacting to sudden loud sounds, movement, or touch)')
     worries_cannot_stop = labeled_slider('Worries that cannot be stopped willingly')
     frequency_of_worries = labeled_slider('Always having worries about things that do not matter a lot')
-    hypochondriasis = labeled_slider('Hypochondriasis')
+    hypochondriasis = labeled_slider('Hypochondriasis (Worrying too much that you are or may become seriously ill)')
 
 # You can use these slider values for further processing or display
 
